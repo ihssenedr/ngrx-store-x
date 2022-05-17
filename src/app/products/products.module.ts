@@ -8,6 +8,8 @@ import {HttpClientModule} from "@angular/common/http";
 import * as fromServices from './services'
 import * as fromContainers from './containers'
 import {RouterModule, Routes} from "@angular/router";
+import {StoreModule} from "@ngrx/store";
+import {reducers} from "./store/reducers";
 export const ROUTES: Routes = [
   {
     path: '',
@@ -24,6 +26,7 @@ export const ROUTES: Routes = [
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forChild(ROUTES),
+    StoreModule.forFeature('products', reducers),
   ]
 })
 export class ProductsModule { }
