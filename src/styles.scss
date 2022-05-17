@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --pmcolor: #f1f0f9;
+  --sdcolor: #fefefe;
+  --ttcolor: #2e2e2e;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: var(--ttcolor);
+  background-color: var(--pmcolor);
+}

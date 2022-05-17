@@ -1,0 +1,15 @@
+<section>
+
+  <a *ngFor="let product of (products)" href="#">
+    <article class="card">
+      <figure class="card-img">
+        <img src="{{product?.image}}" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">{{product?.title | slice:0:37}}</h2>
+        <p class="card-text">{{product?.description | slice:0:131}}</p>
+      </div>
+    </article>
+  </a>
+
+</section>
